@@ -1,2 +1,8 @@
 # RentBike
 Test Koochapps
+
+Hello! Well first of all to start the first thing I did was create an abstract class called "Rental", where I declared the basic variables to perform the logic in the rental methods. Then create a class for each type of rental, which inherits from this abstract class. To apply the method I signed it in an interface called "TotalCost" which was implemented with logic within the "Rental" class and was inherited to its daughter classes ("HourlyRental", "DailyRental", "WeeklyRental"). In the "totalCost" method, the product of the "unitCost" and "totalTime" variables is returned, returning the total rental price as a value.
+Then for the family promotion I created a separate class called “FamilyRental” where the “TotalCost” interface is implemented and a “Rental” List is declared (in order to apply the promotion to any type of rental). Then, within the method, through a "for each" iteration, the "List" is traversed and a sum is made with the total price of each rental, then through a "if" conditional the "List" size is verified. If it meets the conditions requested by the family promotion, the total value is returned by applying a 30% discount, if it does not comply with the conditions of the promotion, a message is printed warning this and the value is returned without applying any type of discount.
+And finally with the tests of the classes I performed "Junit" in each of the classes and each of its methods proving that the logic was correct.
+Well in summary this is the way I solved the test they sent me, I hope I have complied with the request and resolved it in the way you expected. Thank you for this opportunity!
+
