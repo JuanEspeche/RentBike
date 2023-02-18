@@ -1,4 +1,4 @@
-# RentBike
+# Rental Bike
 Test Koochapps
 
 Hello! Well first of all to start the first thing I did was create an abstract class called "Rental", where I declared the basic variables to perform the logic in the rental methods. Then create a class for each type of rental, which inherits from this abstract class. To apply the method I signed it in an interface called "TotalCost" which was implemented with logic within the "Rental" class and was inherited to its daughter classes ("HourlyRental", "DailyRental", "WeeklyRental"). In the "totalCost" method, the product of the "unitCost" and "totalTime" variables is returned, returning the total rental price as a value.
